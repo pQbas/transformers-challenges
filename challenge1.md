@@ -5,7 +5,7 @@
 In natural language processing, words or tokens are represented as indices in a vocabulary. 
 However, neural networks work better with dense vector representations, so each token index 
 needs to be converted into a dense vector called an embedding. This embedding has a specific 
-dimension `d_{model}` and allows the model to capture semantic information.
+dimension `d_model` and allows the model to capture semantic information.
 
 ## Goal:
 
