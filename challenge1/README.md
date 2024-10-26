@@ -9,7 +9,7 @@ dimension `d_model` and allows the model to capture semantic information.
 
 ## Goal:
 
-You will create a class EmbeddingLayer that:
+You will create a class `EmbeddingLayer` that:
 
 1. Takes a vocabulary size `vocab_size` and an embedding dimension `d_model` as inputs.
 2. Converts each token index to a dense vector (embedding) of shape `d_model` 
@@ -17,7 +17,7 @@ You will create a class EmbeddingLayer that:
 
 ## Instructions:
 
-1. Define a class EmbeddingLayer. In the constructor, initialize the embedding matrix $E$ 
+1. Define a class `EmbeddingLayer`. In the constructor, initialize the embedding matrix $E$ 
 using random values. To initialize a matrix of shape (`vocab_size`, `d_model`), you can use 
 `torch.rand`.
 
