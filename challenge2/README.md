@@ -17,7 +17,7 @@ Given:
 
 - $pos$: position of a token in the sequence
 - $i$: dimension index in the embedding vector
-- $d_model$: embedding dimmension size
+- $d_{model}$: embedding dimmension size
 
 We define positional encodeing $PE_{pos,i}$ as follows:
 
