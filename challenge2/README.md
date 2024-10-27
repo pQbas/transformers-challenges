@@ -22,7 +22,7 @@ Given:
 We define positional encodeing $\Large PE_{pos,i}$ as follows:
 
 $$
-\Large
+\LARGE
 PE_{\text{pos}, i} = 
 \begin{cases} 
 \sin\left(\frac{\text{pos}}{10000^{\frac{2i}{d_{\text{model}}}}}\right) & \text{if } i \text{ is even} \\
