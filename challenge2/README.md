@@ -1,3 +1,7 @@
+.md-math-block .MathJax_SVG {
+  font-size: 110% !important;
+}
+
 # Challenge 2: Implement Positional Encoding
 
 ## Description:
