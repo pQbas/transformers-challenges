@@ -1,7 +1,3 @@
-.md-math-block .MathJax_SVG {
-  font-size: 110% !important;
-}
-
 # Challenge 2: Implement Positional Encoding
 
 ## Description:
@@ -19,7 +15,7 @@ to generalize to sequences longer than those seen during training.
 
 Given:
 
-- $pos$: position of a token in the sequence
+- $\Large pos$: position of a token in the sequence
 - $i$: dimension index in the embedding vector
 - $d_{model}$: embedding dimmension size
 
