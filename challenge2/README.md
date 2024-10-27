@@ -16,12 +16,13 @@ to generalize to sequences longer than those seen during training.
 Given:
 
 - $\Large pos$: position of a token in the sequence
-- $i$: dimension index in the embedding vector
-- $d_{model}$: embedding dimmension size
+- $\Large i$: dimension index in the embedding vector
+- $\Large d_{model}$: embedding dimmension size
 
-We define positional encodeing $PE_{pos,i}$ as follows:
+We define positional encodeing $\Large PE_{pos,i}$ as follows:
 
 $$
+\Large
 PE_{\text{pos}, i} = 
 \begin{cases} 
 \sin\left(\frac{\text{pos}}{10000^{\frac{2i}{d_{\text{model}}}}}\right) & \text{if } i \text{ is even} \\
@@ -29,7 +30,7 @@ PE_{\text{pos}, i} =
 \end{cases}
 $$
 
-This results in a matrix $PE$ of shape `(max_len, d_model)`, where each row corresponds
+This results in a matrix $\Large PE$ of shape `(max_len, d_model)`, where each row corresponds
 to the positional encoding for specific position.
 
 ## Instructions:
