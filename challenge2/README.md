@@ -19,10 +19,10 @@ Given:
 - $\Large i$: dimension index in the embedding vector
 - $\Large d_{model}$: embedding dimmension size
 
-We define positional encodeing $\Large PE_{pos,i}$ as follows:
+We define positional encodeing $PE_{pos,i}$ as follows:
 
 $$
-\LARGE
+\Huge
 PE_{\text{pos}, i} = 
 \begin{cases} 
 \sin\left(\frac{\text{pos}}{10000^{\frac{2i}{d_{\text{model}}}}}\right) & \text{if } i \text{ is even} \\
