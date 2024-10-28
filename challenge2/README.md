@@ -15,15 +15,15 @@ to generalize to sequences longer than those seen during training.
 
 Given:
 - $\Large d_{model}$: embedding dimmension size
-- $\Large pos$: position of a token in the sequence, in the range $[0, max_len]$
-- $\Large i$: dimension index in the embedding vector, in range $[0, d_model]$
+- $\Large pos$: position of a token in the sequence, in the range $[0, \text{max_len}]$
+- $\Large i$: dimension index in the embedding vector, in range $[0, d_{model}]$
 
 
 We define positional encodeing $PE(pos,i)$ as follows:
 
 $$
 \Huge
-PE_(pos, i) = 
+PE (pos, i) = 
 \begin{cases} 
 \sin\left(\frac{\text{pos}}{10000^{\frac{2i}{d_{\text{model}}}}}\right) & \text{if } i \text{ is even} \\
 \cos\left(\frac{\text{pos}}{10000^{\frac{2i}{d_{\text{model}}}}}\right) & \text{if } i \text{ is odd} 
