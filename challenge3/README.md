@@ -27,7 +27,7 @@ Given:
 where:
 
 -  $\LARGE N$ is the batch size
--  $\LAREG T$ is the sequence length
+-  $\LARGE T$ is the sequence length
 -  $\LARGE d_k$ is the dimensionality of the queries and keys
 -  $\LARGE d_v$ is the dimensionality of the values
 
