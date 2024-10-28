@@ -15,7 +15,7 @@ to generalize to sequences longer than those seen during training.
 
 Given:
 - $\Large d_{model}$: embedding dimmension size
-- $\Large pos$: position of a token in the sequence, in the range $[0, \text{max len}]$
+- $\Large \text{pos}$: position of a token in the sequence, in the range $[0, \text{max len}]$
 - $\Large i$: dimension index in the embedding vector, in range $[0, d_{model}]$
 
 
