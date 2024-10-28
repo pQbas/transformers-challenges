@@ -26,23 +26,23 @@ Given:
 
 where:
 
--  $N$ is the batch size
--  $T$ is the sequence length
--  $d_k$ is the dimensionality of the queries and keys
--  $d_v$ is the dimensionality of the values
+-  $\LARGE N$ is the batch size
+-  $\LAREG T$ is the sequence length
+-  $\LARGE d_k$ is the dimensionality of the queries and keys
+-  $\LARGE d_v$ is the dimensionality of the values
 
 The steps are as follows
 
 1. Compute attention scores:
     - The attention score is computed by taking the doc product between each query
-      vector $\Large Q_i$ and each key vector $K_j$ for a given sqequence.
+      vector $\Large Q_i$ and each key vector $\Large K_j$ for a given sqequence.
 
-    - The dot product is scaled by the factor $\sqrt{d_k}$ to  prevent extremely large
+    - The dot product is scaled by the factor $\Large \sqrt{d_k}$ to  prevent extremely large
       values and stabilize the gradients.
 
-    $$
-    \LARGE \text{scores} = \frac{Q \cdot K^T}{\sqrt{d_k}}
-    $$
+$$
+\LARGE \text{scores} = \frac{Q \cdot K^T}{\sqrt{d_k}}
+$$
 
     Here `Q` and `K` are matrix-multiplied, within $K^T$ being the transfosed of `K`.
 
@@ -51,17 +51,17 @@ The steps are as follows
     probabilities. This step normalizes the scores so that they sum to 1, making it
     easier to interpret each as an "attention weight".
 
-    $$
-    \LARGE \text{Attention Weights} = \text{softmax}\left(\frac{Q \cdot K^T}{\sqrt{d_k}}\right)  
-    $$
+$$
+\LARGE \text{Attention Weights} = \text{softmax}\left(\frac{Q \cdot K^T}{\sqrt{d_k}}\right)  
+$$
 
 3. Multiply attention weights by Values (V):
     - Multiply the attention weights by the value matrix $V$ to focus on sepcific parts of $V$
     based on the attention weights. 
 
-    $$
-    \LARGE  \text{Output} = \text{Attention Weights} \cdot V 
-    $$
+$$
+\LARGE  \text{Output} = \text{Attention Weights} \cdot V 
+$$
 
 This produces the output of the scaled dot-product attention, which has the shape $(N, T, d_v)$
 where each element represents a combination of the values weighted by the attention each query
