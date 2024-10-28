@@ -22,7 +22,7 @@ improving gradient flow and training stability.
 Given:
 -  $\LARGE Q$ : A tensor representing queries of shape $\Large \( N, T, d_k \)$
 -  $\LARGE K$ : A tensor representing keys of shape $\Large \(N, T, d_k \)$
--  $\LARGE V$ : A tensor representing values of shape $ \Large \(N, T, d_k \)$
+-  $\LARGE V$ : A tensor representing values of shape $\Large \(N, T, d_k \)$
 
 where:
 
