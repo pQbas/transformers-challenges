@@ -34,19 +34,21 @@ where:
 The steps are as follows
 
 1. Compute attention scores:
+
     - The attention score is computed by taking the doc product between each query
       vector $\Large Q_i$ and each key vector $\Large K_j$ for a given sqequence.
 
     - The dot product is scaled by the factor $\Large \sqrt{d_k}$ to  prevent extremely large
       values and stabilize the gradients.
 
+    - Here `Q` and `K` are matrix-multiplied, within $K^T$ being the transfosed of `K`.
+
 $$
 \LARGE \text{scores} = \frac{Q \cdot K^T}{\sqrt{d_k}}
 $$
 
-    Here `Q` and `K` are matrix-multiplied, within $K^T$ being the transfosed of `K`.
-
 2. Apply Softmax to obtain attention weights:
+
     - Apply the softmax function along the last dimension to convert scores into
     probabilities. This step normalizes the scores so that they sum to 1, making it
     easier to interpret each as an "attention weight".
