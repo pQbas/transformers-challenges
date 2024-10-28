@@ -34,11 +34,11 @@ This results in a matrix $\Large PE$ of shape `(max_len, d_model)`, where each r
 to the positional encoding for specific position.
 
 ## Instructions:
- 1. Define a `PositionalEncoding` class.
- 2. In the constructor, compute the positional encoding for a maximum sequence lenght, `max_len`,
+ 1. Define a `PositionalEncoding` class with parameters `d_model, max_len`.
+ 2. In the constructor, compute the positional encoding $PE$ for a maximum sequence lenght, `max_len`,
     using formulas provided.
  2. In the forward method:
-    - Add the positional encoding to the input embeddings
+    - Add the positional encoding $PE$ to the input embeddings
     - Ensure the output has the same shape as the input embeddings 
       `(batch_size, sequence_length, d_model)`.  
 
